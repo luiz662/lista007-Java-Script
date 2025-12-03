@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Exercícios - Matrizes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #dc3545; }
+        .exercicios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+        button { padding: 10px; border: none; border-radius: 5px; cursor: pointer; background-color: #dc3545; color: white; transition: background-color 0.3s; }
+        button:hover { background-color: #bd2130; }
+        #output_matrizes { border: 1px solid #ccc; padding: 15px; min-height: 50px; background-color: #fff0f0; white-space: pre-wrap; margin-top: 20px;}
+        .titulo-output { font-weight: bold; margin-bottom: 10px; color: #bd2130; }
+        .matriz-display { font-family: 'Courier New', monospace; margin: 10px 0; border: 1px dashed #ccc; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🔢 Exercícios de JavaScript (Matrizes/Arrays Bidimensionais)</h1>
+
+    <div class="exercicios">
+        <button onclick="executarExercicioMatrizes(1)">1) Exibir Matriz 3x3</button>
+        <button onclick="executarExercicioMatrizes(2)">2) Soma Matriz 2x2</button>
+        <button onclick="executarExercicioMatrizes(3)">3) Soma Diagonal Principal 3x3</button>
+        <button onclick="executarExercicioMatrizes(4)">4) Soma Duas Matrizes 2x2</button>
+        <button onclick="executarExercicioMatrizes(5)">5) Maior Valor 3x3</button>
+        <button onclick="executarExercicioMatrizes(6)">6) Média Aritmética 4x4</button>
+        <button onclick="executarExercicioMatrizes(7)">7) Produto Duas Matrizes 2x2</button>
+        <button onclick="executarExercicioMatrizes(8)">8) Menor Valor 3x3</button>
+        <button onclick="executarExercicioMatrizes(9)">9) Verificar Simetria 3x3</button>
+        <button onclick="executarExercicioMatrizes(10)">10) Soma por Coluna 4x4</button>
+        <button onclick="executarExercicioMatrizes(11)">11) Verificar Igualdade 2x2</button>
+        <button onclick="executarExercicioMatrizes(12)">12) Produto Diagonal Secundária 3x3</button>
+        <button onclick="executarExercicioMatrizes(13)">13) Maior Valor por Linha 4x4</button>
+        <button onclick="executarExercicioMatrizes(14)">14) Verificar Matriz Identidade 3x3</button>
+        <button onclick="executarExercicioMatrizes(15)">15) Subtração Duas Matrizes 2x2</button>
+    </div>
+
+    <hr>
+
+    <div class="titulo-output">Resultado do Exercício:</div>
+    <div id="output_matrizes">Clique em um botão para ver o resultado aqui.</div>
+
+    <script src="script_matrizes.js"></script>
+</body>
+</html>
